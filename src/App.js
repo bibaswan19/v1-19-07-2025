@@ -5,6 +5,7 @@ import NavBar from './components/Navbar';
 import Gallery from './components/Gallery';
 import './App.css'; 
 import AboutUs from './components/AboutUs';
+import TestimonialCarousel from './components/Testimonial';
 
 function App() {
   return (
@@ -14,7 +15,11 @@ function App() {
       <AboutUs/>
       <PopularCourses />
       <div className="gallery-header">
-        <h2>Gallery</h2>
+        <h2>Testimonial.</h2>
+      </div>
+      <TestimonialCarousel/>
+      <div className="gallery-header">
+        <h2>Gallery.</h2>
       </div>
       <Gallery />
     </div>

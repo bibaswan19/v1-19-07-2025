@@ -8,7 +8,7 @@ const sections = [
   "popular-courses",
   "testimonials",
   "gallery",
-  "contact",
+  "enquire",
   "blogs",
   "courses",
 ];
