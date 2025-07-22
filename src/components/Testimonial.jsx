@@ -5,10 +5,6 @@ import "./Testimonial.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const getImagePrefix = () => {
-  return process.env.NODE_ENV === "production" ? "/E-learning" : "";
-};
-
 const TestimonialData = [
   {
     name: "Robert Fox",
@@ -126,7 +122,7 @@ const Testimonial = () => {
                 <div className={`testimonial-card ${i % 2 ? "shadow-alt" : "shadow"}`}>
                   <div className="testimonial-avatar">
                     <img
-                      src={`${getImagePrefix()}${item.imgSrc}`}
+                      src={`${item.imgSrc}`}
                       alt={item.name}
                       width="80"
                       height="80"
