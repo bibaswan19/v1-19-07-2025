@@ -8,6 +8,7 @@ import AboutUs from "./components/AboutUs";
 import TestimonialCarousel from "./components/Testimonial";
 import Courses from "./Courses"; // ✅ Import Courses page
 import "./App.css";
+import LetsChat from "./components/LetsChat";
 
 const Home = () => (
   <>
@@ -23,6 +24,7 @@ const Home = () => (
       <h2>Gallery.</h2>
     </div>
     <Gallery />
+    <LetsChat/>
   </>
 );
 

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logoImage from "../assets/logoimage.png";
 
-const sections = ["home", "about", "popular-courses", "gallery", "enquire"];
+const sections = ["home", "about", "popular-courses", "gallery", "enquiry"];
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");

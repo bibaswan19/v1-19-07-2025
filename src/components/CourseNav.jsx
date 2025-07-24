@@ -37,7 +37,7 @@ const CourseNavbar = () => {
         </li>
         <li>
           <Link to="/#popular-courses" className="nav-link">
-            Popular
+            Popular-courses
           </Link>
         </li>
         <li>

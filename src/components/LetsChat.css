@@ -1,0 +1,119 @@
+.lets-chat-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #ffffff, #d9d8f2);
+}
+
+.chat-left {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.chat-left h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.chat-left p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.chat-form {
+  flex: 1 1 400px;
+  width: 100%;
+}
+
+.chat-map-container {
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+input,
+textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+select {
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.75rem 2.5rem 0.75rem 0.75rem;
+  font-size: 1rem;
+  font-family: inherit;
+  width: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 140 140' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='30,50 70,90 110,50' stroke='%23333' stroke-width='14' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+  transition: border 0.2s ease;
+}
+
+select,input,
+textarea:hover {
+  border-color: #2b1464;
+  box-shadow: 0 0 3px rgba(125, 78, 248, 0.1);
+}
+
+select,input,
+textarea:focus {
+  border-color: #7e4ef8;
+  box-shadow: 0 0 0 2px rgba(125, 78, 248, 0.2);
+}
+
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sendbt {
+  max-width: 10rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  border: none;
+  align-self: center;
+  background-color:#6d28d9;
+  color: white;
+  padding: 12px 30px;
+  height: 8vh;
+  width: 10vw;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.sendbt:hover {
+  background-color: #ede9fe;
+  color: #6d28d9;
+}
