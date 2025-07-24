@@ -1,17 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logoImage from "../assets/logoimage.png";
 
-const sections = [
-  "home",
-  "about",
-  "popular-courses",
-  "testimonials",
-  "gallery",
-  "enquire",
-  "blogs",
-  "courses",
-];
+const sections = ["home", "about", "popular-courses", "gallery", "enquire"];
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -69,7 +61,13 @@ const Navbar = () => {
             </a>
           </li>
         ))}
+        <li>
+          <Link to="/courses" className="nav-link">
+            Courses
+          </Link>
+        </li>
       </ul>
+
       <div className="auth-buttons">
         <button className="sign-in">Sign In</button>
         <button className="sign-up">Sign Up</button>

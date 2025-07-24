@@ -1,0 +1,115 @@
+.courses-page {
+  padding: 4rem 2rem;
+  background: #f2f8fd;
+  min-height: 100vh;
+}
+
+.courses-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #222;
+}
+
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.course-item {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  transition: 0.3s ease;
+}
+
+.course-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.course-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+
+.course-info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-info h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: #333;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.subtopics {
+  margin-top: 1rem;
+  padding-left: 2rem;
+  list-style: none;
+}
+
+.subtopics li {
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #444;
+}
+
+.course-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.361);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for subtopic row */
+.subtopics li:hover {
+  background-color: #f2f8fd;
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.subtopics li .left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.subtopics .arrow {
+  color: #007bff;
+}
+
+.download-icon {
+  color: #007bff;
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.download-icon:hover {
+  color: #ff9238;
+}
