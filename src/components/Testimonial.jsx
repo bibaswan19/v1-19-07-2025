@@ -12,7 +12,7 @@ const TestimonialData = [
     comment:
       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
     imgSrc: "/images/testimonial/user.svg",
-    rating: 5,
+    rating: 4,
   },
   {
     name: "Leslie Alexander",
@@ -20,7 +20,7 @@ const TestimonialData = [
     comment:
       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
     imgSrc: "/images/mentor/user2.png",
-    rating: 5,
+    rating: 4.5,
   },
   {
     name: "Cody Fisher",
@@ -28,31 +28,31 @@ const TestimonialData = [
     comment:
       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
     imgSrc: "/images/mentor/user3.png",
-    rating: 5,
+    rating: 3.5,
   },
   {
-    name: "Robert Fox",
+    name: "Pavel Durov",
     profession: "CEO, Parkview Int.Ltd",
     comment:
       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
     imgSrc: "/images/mentor/user1.png",
-    rating: 5,
+    rating: 4,
   },
   {
-    name: "Leslie Alexander",
+    name: "Andy Byron",
     profession: "CEO, Parkview Int.Ltd",
     comment:
       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
     imgSrc: "/images/mentor/user2.png",
-    rating: 5,
+    rating: 2,
   },
   {
-    name: "Cody Fisher",
+    name: "Tim Cook",
     profession: "CEO, Parkview Int.Ltd",
     comment:
       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
     imgSrc: "/images/mentor/user3.png",
-    rating: 5,
+    rating: 4,
   },
 ];
 
@@ -60,11 +60,11 @@ const Testimonial = () => {
   const settings = {
     dots: true,
     infinite: true,
-    centerMode: true,
-    centerPadding: "60px",
-    slidesToShow: 3,
+    centerMode: false, // ✅ Disabled
+    centerPadding: "0px", // ✅ No side padding
+    slidesToShow: 3, // ✅ Show 3 at a time
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     autoplay: true,
     cssEase: "linear",
     responsive: [
@@ -72,21 +72,12 @@ const Testimonial = () => {
         breakpoint: 1200,
         settings: {
           slidesToShow: 2,
-          centerPadding: "40px",
         },
       },
       {
-        breakpoint: 800,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          centerPadding: "30px",
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          centerPadding: "0px",
         },
       },
     ],
@@ -100,13 +91,21 @@ const Testimonial = () => {
     return (
       <>
         {[...Array(full)].map((_, i) => (
-          <Icon key={`full-${i}`} icon="tabler:star-filled" className="star filled" />
+          <Icon
+            key={`full-${i}`}
+            icon="tabler:star-filled"
+            className="star filled"
+          />
         ))}
         {half === 1 && (
           <Icon icon="tabler:star-half-filled" className="star filled" />
         )}
         {[...Array(empty)].map((_, i) => (
-          <Icon key={`empty-${i}`} icon="tabler:star-filled" className="star empty" />
+          <Icon
+            key={`empty-${i}`}
+            icon="tabler:star-filled"
+            className="star empty"
+          />
         ))}
       </>
     );
@@ -119,7 +118,11 @@ const Testimonial = () => {
           <Slider {...settings}>
             {TestimonialData.map((item, i) => (
               <div key={i} className="testimonial-slide">
-                <div className={`testimonial-card ${i % 2 ? "shadow-alt" : "shadow"}`}>
+                <div
+                  className={`testimonial-card ${
+                    i % 2 ? "shadow-alt" : "shadow"
+                  }`}
+                >
                   <div className="testimonial-avatar">
                     <img
                       src={`${item.imgSrc}`}
@@ -132,9 +135,13 @@ const Testimonial = () => {
                   <div className="testimonial-footer">
                     <div>
                       <h3 className="testimonial-name">{item.name}</h3>
-                      <p className="testimonial-profession">{item.profession}</p>
+                      <p className="testimonial-profession">
+                        {item.profession}
+                      </p>
                     </div>
-                    <div className="testimonial-rating">{renderStars(item.rating)}</div>
+                    <div className="testimonial-rating">
+                      {renderStars(item.rating)}
+                    </div>
                   </div>
                 </div>
               </div>

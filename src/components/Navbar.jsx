@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logoImage from "../assets/logoimage.png";
 
-const sections = ["home", "about", "popular-courses", "gallery", "enquiry"];
+const sections = ["home", "about", "popular-courses", "enquiry"];
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -62,6 +62,11 @@ const Navbar = () => {
           </li>
         ))}
         <li>
+          <Link to="/gallery" className="nav-link">
+            Gallery
+          </Link>
+        </li>
+                <li>
           <Link to="/courses" className="nav-link">
             Courses
           </Link>

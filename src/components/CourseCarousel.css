@@ -2,6 +2,7 @@
   padding: 2rem;
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .carousel-header {
@@ -22,40 +23,28 @@
   text-decoration: none;
 }
 
-.carousel {
-  display: flex;
-  align-items: center;
+.carousel-slider {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #701be61a;
+  padding: 2rem;
+  overflow: hidden;
   position: relative;
 }
 
-.carousel-track-wrapper {
-  overflow: hidden;
-  width: 100%;
-}
-
-.carousel-track {
-  display: flex;
-  gap: 24px; /* controls spacing between cards */
-  transition: transform 0.4s ease-in-out;
-  width: fit-content;
+/* Force internal slick track container to clip cards */
+.carousel-slider .slick-list {
+  overflow: hidden !important;
 }
 
 .course-card {
-  flex: 0 0 calc((100% - 48px) / 3); /* 3 cards, 2 gaps of 24px = 48px */
   background: #fff;
-  border-radius: 20px;
-  padding: 1rem;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
-}
-
-.course-card:last-child {
-  margin-right: 0;
-}
-
-.course-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.336);
+  border-radius: 1rem;
+  padding: 2rem;
+  position: relative;
+  max-width: 25vw;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+  height: 100%;
 }
 
 .image-wrapper {
@@ -66,8 +55,8 @@
 
 .image-wrapper img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   border-radius: 10px;
 }
 
@@ -93,35 +82,12 @@
   font-size: 0.9rem;
 }
 
-.nav-button {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: #333;
-  cursor: pointer;
-  user-select: none;
-}
-
-.nav-button.left {
-  margin-right: 1rem;
-}
-
-.nav-button.right {
-  margin-left: 1rem;
-}
-
-@media (max-width: 1024px) {
-  .course-card {
-    width: 48%;
-  }
-}
-
 @media (max-width: 600px) {
-  .course-card {
-    width: 100%;
-  }
-
   .carousel-header h2 {
     font-size: 1.5rem;
+  }
+
+  .course-card {
+    min-width: 50vw;
   }
 }

@@ -2,21 +2,20 @@
   padding: 1rem 1rem;
   background: #98a9ffba;
   overflow-x: visible;
-  max-height: 65vh;
+  height: 65vh;
 }
 
 .testimonial-container {
-  max-width: 1280px;
+  max-width: 78%;
   margin: 0 auto;
-  padding: 1rem; /* ✅ added 1rem padding */
+  padding: 5rem 0; 
   overflow: hidden;
 }
 
 .testimonial-carousel-wrapper {
   position: relative;
   overflow: visible;
-  margin-top: 2%;
-  padding: 0; /* Removed extra padding here to avoid double spacing */
+  padding: 0; 
 }
 
 .slick-slider {
@@ -28,7 +27,11 @@
 }
 
 .slick-slide {
-  padding: 0 1rem; /* ✅ 2rem gap between cards (1rem on each side) */
+  padding: 0; /* ✅ remove outer spacing */
+}
+
+.testimonial-card {
+  margin: 0 1rem; /* ✅ apply spacing inside the card */
 }
 
 
@@ -92,8 +95,4 @@
 
 .star.empty {
   color: #d1d5db; /* gray-300 */
-}
-
-.testimonial-section .slick-dots {
-  bottom: 10vh !important;
 }

@@ -13,7 +13,7 @@
 
 .navbar.scrolled {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.336);
-  top: -3%;
+  top: -2%;
 }
 
 
@@ -106,4 +106,13 @@
 .auth-buttons .sign-up:hover{
   background-color:#6d28d9;
   color: white;
+}
+
+@media (max-width: 600px) {
+  
+  .navbar{
+    display: none;
+  }
+
+  
 }

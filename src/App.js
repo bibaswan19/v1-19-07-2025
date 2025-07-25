@@ -9,10 +9,14 @@ import TestimonialCarousel from "./components/Testimonial";
 import Courses from "./Courses"; // ✅ Import Courses page
 import "./App.css";
 import LetsChat from "./components/LetsChat";
+import Chatbot from "./components/Chatbot";
+import BlogSection from "./components/BlogSection";
+import NoticeSection from "./components/NoticeSection";
 
 const Home = () => (
   <>
     <NavBar />
+    <NoticeSection/>
     <HeroSection />
     <AboutUs />
     <PopularCourses />
@@ -20,10 +24,12 @@ const Home = () => (
       <h2>Testimonial.</h2>
     </div>
     <TestimonialCarousel />
-    <div className="gallery-header">
-      <h2>Gallery.</h2>
+        <div className="gallery-header">
+      <h2>Blogs & Videos.</h2>
     </div>
-    <Gallery />
+    <BlogSection/>
+    {/* <Gallery /> */}
+    <Chatbot/>
     <LetsChat/>
   </>
 );
@@ -33,6 +39,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/courses" element={<Courses />} />
+      <Route path="/gallery" element={<Gallery />} />
     </Routes>
   );
 }
