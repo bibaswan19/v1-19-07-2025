@@ -41,13 +41,18 @@ const CourseNavbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/#gallery" className="nav-link">
-            Gallery
+          <Link to="/#enquire" className="nav-link">
+            Enquire
           </Link>
         </li>
         <li>
-          <Link to="/#enquire" className="nav-link">
-            Enquire
+          <Link
+            to="/gallery"
+            className={`nav-link ${
+              location.pathname === "/gallery" ? "active" : ""
+            }`}
+          >
+            Gallery
           </Link>
         </li>
         <li>
