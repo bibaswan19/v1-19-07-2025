@@ -36,12 +36,11 @@ const Footer = () => {
       <hr />
 
       <div className="footer-bottom">
-        <p>@2025 Agency. All Rights Reserved by GetNextJsTemplates.com</p>
+        <p>@2025 Agency. All Rights Reserved by Sikharthy Infotech Pvt. Ltd.</p>
         <div className="footer-policy">
           <a href="/Privacy policy">Privacy policy</a>
           <a href="/terms">Terms & conditions</a>
         </div>
-        <p>Distributed by ThemeWagon</p>
       </div>
     </footer>
   );
