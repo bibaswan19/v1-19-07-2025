@@ -13,6 +13,7 @@ import G7 from "../assets/g7.jpg";
 import G8 from "../assets/g8.jpg";
 import G9 from "../assets/g9.jpg";
 import G10 from "../assets/g10.jpg";
+import Footer from "./Footer.jsx";
 
 const panels = [G1, G2, G3, G4, G5, G6, G7, G8, G9, G10];
 const angle = 180 / (panels.length - 1);
@@ -116,6 +117,7 @@ export default function ThreeDGallery() {
           &#10095;
         </button>
       </div>
+      <Footer/>
     </>
   );
 }

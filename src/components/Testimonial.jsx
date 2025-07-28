@@ -112,7 +112,7 @@ const Testimonial = () => {
   };
 
   return (
-    <section className="testimonial-section" id="testimonials">
+    <section className="testimonial-section">
       <div className="testimonial-container">
         <div className="testimonial-carousel-wrapper">
           <Slider {...settings}>

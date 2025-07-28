@@ -41,8 +41,8 @@ const CourseNavbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/#enquire" className="nav-link">
-            Enquire
+          <Link to="/#contact-us" className="nav-link">
+            Contact-us
           </Link>
         </li>
         <li>
@@ -68,8 +68,8 @@ const CourseNavbar = () => {
       </ul>
 
       <div className="auth-buttons">
-        <button className="sign-in">Sign In</button>
-        <button className="sign-up">Sign Up</button>
+        <button className="sign-in">Enquiry</button>
+        <button className="sign-up">Admin</button>
       </div>
     </nav>
   );

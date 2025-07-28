@@ -1,0 +1,111 @@
+.contact-wrapper {
+  background-color: #b3e5fc;
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  width: 100%;
+  padding: 3rem 2rem;
+  position: relative;
+  overflow: visible;
+}
+
+.contact-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  position: relative;
+}
+
+.contact-info {
+  background-color: #0b3558;
+  color: white;
+  padding: 2rem;
+  max-height: 45vh;
+  border-radius: 16px;
+  width: 340px;
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info h2 {
+  margin-top: -0.5rem;
+  font-size: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.contact-item span {
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.social-icons span {
+  margin-right: 3rem;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 3rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.social-icons a.ig:hover {
+  transform: translateY(-0.5rem);
+  color: #f06292;
+}
+.social-icons a.fb:hover {
+  transform: translateY(-0.5rem);
+  color: #002afe;
+}
+.social-icons a.x:hover {
+  transform: translateY(-0.5rem);
+  color: #feffde;
+}
+
+
+.map-container {
+  margin-left: 380px; /* leave space for blue card */
+  flex: 1;
+  height: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  min-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .contact-inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-info {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .map-container {
+    margin-left: 0;
+    height: 300px;
+    min-width: 100%;
+  }
+}

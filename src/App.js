@@ -12,25 +12,28 @@ import LetsChat from "./components/LetsChat";
 import Chatbot from "./components/Chatbot";
 import BlogSection from "./components/BlogSection";
 import NoticeSection from "./components/NoticeSection";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 const Home = () => (
   <>
     <NavBar />
-    <NoticeSection/>
+    <NoticeSection />
     <HeroSection />
     <AboutUs />
     <PopularCourses />
-    <div className="gallery-header">
+    <div className="gallery-header" id="testimonials">
       <h2>Testimonial.</h2>
     </div>
     <TestimonialCarousel />
-        <div className="gallery-header">
+    <div className="gallery-header" id="blogs">
       <h2>Blogs & Videos.</h2>
     </div>
-    <BlogSection/>
-    {/* <Gallery /> */}
-    <Chatbot/>
-    <LetsChat/>
+    <BlogSection />
+    <Chatbot />
+    {/* <LetsChat /> */}
+    <Contact/>
+    <Footer />
   </>
 );
 

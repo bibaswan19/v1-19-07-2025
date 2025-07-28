@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logoImage from "../assets/logoimage.png";
 
-const sections = ["home", "about", "popular-courses", "enquiry"];
+const sections = ["home", "about", "popular-courses", "contact-us"];
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -74,8 +74,8 @@ const Navbar = () => {
       </ul>
 
       <div className="auth-buttons">
-        <button className="sign-in">Sign In</button>
-        <button className="sign-up">Sign Up</button>
+        <button className="sign-in">Enquiry</button>
+        <button className="sign-up">Admin</button>
       </div>
     </nav>
   );
