@@ -1,0 +1,68 @@
+.admin-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.admin-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+.admin-notification-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.admin-notification-item {
+  background: #fff;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.admin-notification-item:hover {
+  transform: translateY(-2px);
+}
+
+.admin-notification-content {
+  flex: 1;
+}
+
+.admin-notification-title {
+  color: #333;
+  display: block;
+  font-weight: bold;
+}
+
+.admin-notification-date {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.admin-button-group button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-left: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.admin-button-group button:hover {
+  background-color: #0056b3;
+}

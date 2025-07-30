@@ -5,17 +5,17 @@ const notices = [
   {
     id: 1,
     text: "Admission open for 2025 batch - Limited seats available!",
-    link: "#",
+    link: "/notification",
   },
   {
     id: 2,
     text: "Upcoming seminar on Web Development - Register Now!",
-    link: "#",
+    link: "/notification",
   },
   {
     id: 3,
     text: "Mid-term exams scheduled from August 10th to 20th.",
-    link: "#",
+    link: "/notification",
   },
 ];
 
@@ -29,7 +29,7 @@ const NoticeSection = () => {
             <a
               href={notice.link}
               className="notice-link"
-              onClick={(e) => e.preventDefault()}
+              onClick={() => window.location.href = notice.link}
             >
               Read More
             </a>

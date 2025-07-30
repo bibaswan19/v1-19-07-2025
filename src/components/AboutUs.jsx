@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutUs.css";
-import teamImg from "../assets/ (1).png"; // replace with actual image path
-import growImg from "../assets/ (2).png"; // replace with actual image path
+import teamImg from "../assets/about.png";
+import growImg from "../assets/moto.png";
 
 const AboutUs = () => {
   return (

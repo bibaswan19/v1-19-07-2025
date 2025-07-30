@@ -14,6 +14,8 @@ import BlogSection from "./components/BlogSection";
 import NoticeSection from "./components/NoticeSection";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import NotificationPage from "./NotificationPage";
+import AdminPage from "./AdminPage";
 
 const Home = () => (
   <>
@@ -43,6 +45,8 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/courses" element={<Courses />} />
       <Route path="/gallery" element={<Gallery />} />
+      <Route path="/notification" element={<NotificationPage/>} />
+      <Route path="/admin" element={<AdminPage/>} />
     </Routes>
   );
 }
