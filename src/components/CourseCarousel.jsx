@@ -2,26 +2,26 @@ import React from "react";
 import Slider from "react-slick";
 import "./CourseCarousel.css";
 
-const CourseCarousel = () => {
+const CourseCarousel = ({ onOpenPopup }) => {
   const courseData = [
-    { title: "UPSC CSE", author: "View Price ₹", image: require("../assets/c2.jpeg"), link: "/courses/figma" },
-    { title: "BANKING", author: "View Price ₹", image: require("../assets/c2.jpeg"), link: "/courses/webflow-launch" },
-    { title: "NDA", author: "View Price ₹", image: require("../assets/c2.jpeg"), link: "/courses/react-patterns" },
-    { title: "FOOD SI", author: "View Price ₹", image: require("../assets/c2.jpeg"), link: "/courses/uiux" },
-    { title: "LSAT", author: "View Price ₹", image: require("../assets/c1.jpeg"), link: "/courses/nodejs" },
-    { title: "MAT", author: "View Price ₹", image: require("../assets/c1.jpeg"), link: "/courses/js-basics" },
-    { title: "CAT", author: "View Price ₹", image: require("../assets/c1.jpeg"), link: "/courses/nextjs" },
+    { title: "UPSC CSE", author: "View Price ₹", image: require("../assets/c2.jpeg") },
+    { title: "BANKING", author: "View Price ₹", image: require("../assets/c2.jpeg") },
+    { title: "NDA", author: "View Price ₹", image: require("../assets/c2.jpeg") },
+    { title: "FOOD SI", author: "View Price ₹", image: require("../assets/c2.jpeg") },
+    { title: "LSAT", author: "View Price ₹", image: require("../assets/c1.jpeg") },
+    { title: "MAT", author: "View Price ₹", image: require("../assets/c1.jpeg") },
+    { title: "CAT", author: "View Price ₹", image: require("../assets/c1.jpeg") },
   ];
 
   const settings = {
     dots: true,
     infinite: true,
-    centerMode: false, // ✅ Disabled
-    centerPadding: "0px", // ✅ No side padding
-    slidesToShow: 3, // ✅ Show 3 at a time
+    centerMode: false,
+    centerPadding: "0px",
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    cssEase: "linear",   
+    cssEase: "linear",
     pauseOnHover: true,
     arrows: true,
     responsive: [
@@ -50,9 +50,12 @@ const CourseCarousel = () => {
           <div className="course-card" key={i}>
             <div className="image-wrapper">
               <img src={course.image} alt={course.title} />
-              <a className="know-more" href={course.link}>
+              <button
+                className="know-more"
+                onClick={() => onOpenPopup && onOpenPopup()}
+              >
                 KNOW MORE
-              </a>
+              </button>
             </div>
             <h3>{course.title}</h3>
             <p>{course.author}</p>
