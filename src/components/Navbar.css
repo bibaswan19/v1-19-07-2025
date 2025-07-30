@@ -82,7 +82,7 @@
     transform: translateY(-0.5rem);
   }
   50% {
-    background-color: #ede9fe;
+    background-color: rgba(255, 148, 61, 0.153);
     color: #6d28d9;
     transform: translateY(0.5rem);
   }
@@ -106,12 +106,12 @@
 .auth-buttons .sign-in:hover,
 .auth-buttons .sign-in:focus {
   animation: none;
-  background-color: #ede9fe;
+  background-color: rgba(255, 148, 61, 0.153);
   color: #6d28d9;
 }
 
 .auth-buttons .sign-up {
-  background-color: #ede9fe;
+  background-color: rgba(255, 148, 61, 0.153);
   color: #6d28d9;
   padding: 12px 30px;
   height: 8vh;

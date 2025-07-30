@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logoImage from "../assets/logoimage.png";
+import LetsTalkPopup from "./LetsTalkPopup";
 
 const sections = ["home", "about", "popular-courses", "contact-us"];
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,38 +48,45 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
-      <div className="logo">
-        <img src={logoImage} alt="kkk" className="logo-img" />
-      </div>
-      <ul className="nav-links">
-        {sections.map((id) => (
-          <li key={id}>
-            <a
-              href={`#${id}`}
-              className={`nav-link ${activeSection === id ? "active" : ""}`}
-            >
-              {id.charAt(0).toUpperCase() + id.slice(1)}
-            </a>
+    <>
+      <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
+        <div className="logo">
+          <img src={logoImage} alt="kkk" className="logo-img" />
+        </div>
+        <ul className="nav-links">
+          {sections.map((id) => (
+            <li key={id}>
+              <a
+                href={`#${id}`}
+                className={`nav-link ${activeSection === id ? "active" : ""}`}
+              >
+                {id.charAt(0).toUpperCase() + id.slice(1)}
+              </a>
+            </li>
+          ))}
+          <li>
+            <Link to="/gallery" className="nav-link">
+              Gallery
+            </Link>
           </li>
-        ))}
-        <li>
-          <Link to="/gallery" className="nav-link">
-            Gallery
-          </Link>
-        </li>
-                <li>
-          <Link to="/courses" className="nav-link">
-            Courses
-          </Link>
-        </li>
-      </ul>
+          <li>
+            <Link to="/courses" className="nav-link">
+              Courses
+            </Link>
+          </li>
+        </ul>
 
-      <div className="auth-buttons">
-        <button className="sign-in">Enquiry</button>
-        <button className="sign-up">Admin</button>
-      </div>
-    </nav>
+        <div className="auth-buttons">
+          <button className="sign-in" onClick={() => setShowPopup(true)}>
+            Let's Talk
+          </button>
+          <button className="sign-up">Study Materials</button>
+        </div>
+      </nav>
+
+      {/* Show popup if triggered */}
+      {showPopup && <LetsTalkPopup onClose={() => setShowPopup(false)} />}
+    </>
   );
 };
 
