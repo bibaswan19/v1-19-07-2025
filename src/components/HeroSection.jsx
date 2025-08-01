@@ -7,10 +7,9 @@ const HeroSection = () => {
     <div className="hero-container" id="home">
       <div className="hero-left">
         <p className="hero-offer">✅ Get 30% off on first enroll</p>
-        <h1>JOIN US FOR SHAPING
-            YOUR BRIGHT FUTURE</h1>
+        <h1>YOUR SUCCESS ,OUR GOAL</h1>
         <p className="hero-subtext">
-          Build skills with our courses and mentor from world-class companies.
+          There’s no shortcut to success, but there’s always the right guidance – find it at Bibaswan.
         </p>
         
         {/* <div className="search-bar">
@@ -18,9 +17,15 @@ const HeroSection = () => {
           <button>🔍</button>
         </div> */}
         <div className="hero-tags">
-          <span>✔️ Flexible</span>
-          <span>✔️ Learning path</span>
-          <span>✔️ Community</span>
+          <span>✔️ Expert Faculty Mentorship </span>
+          <br/>
+          <span>✔️ Friendly & Supportive Community</span>
+          <br/>
+          <span>✔️ Personal Performance Monitoring</span>
+          <br/>
+          <span>✔️ Daily MCQs + PYQs</span>
+          <br/>
+          <span>✔️ 1:1 Progress Guidance</span>
         </div>
       </div>
 

@@ -18,7 +18,7 @@ import Footer from "./Footer.jsx";
 const panels = [G1, G2, G3, G4, G5, G6, G7, G8, G9, G10];
 const angle = 180 / (panels.length - 1);
 
-export default function ThreeDGallery() {
+export default function ThreeDGallery({ onOpenPopup }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // handlers
@@ -79,7 +79,7 @@ export default function ThreeDGallery() {
 
   return (
     <>
-      <NavBar />
+      <NavBar onOpenPopup={onOpenPopup} />
       <div
         className="gallery-container"
         onMouseDown={handleMouseDown}
