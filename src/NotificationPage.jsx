@@ -63,7 +63,7 @@ const openContentAsPDF = (title, content) => {
 
 
   return (
-    <div>
+    <div className="body">
       <CourseNavbar />
       <div className="notification-container">
         <h2 className="notification-heading">Notifications</h2>
