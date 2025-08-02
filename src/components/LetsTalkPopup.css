@@ -57,7 +57,7 @@ textarea {
   font-size: 1rem;
   border: none;
   align-self: center;
-  background-color:#6d28d9;
+  background-color:#4228d9;
   color: white;
   padding: 12px 30px;
   height: 8vh;
@@ -69,7 +69,7 @@ textarea {
 
 .send-bt:hover {
   background-color: #ff3c0076;
-  color: #6d28d9;
+  color: #4228d9;
 }
 
 .popup-content {

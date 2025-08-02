@@ -16,6 +16,7 @@ import Contact from "./components/Contact";
 import NotificationPage from "./NotificationPage";
 import AdminPage from "./AdminPage";
 import "./App.css";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 const Home = ({ onOpenPopup }) => (
   <>
@@ -32,6 +33,7 @@ const Home = ({ onOpenPopup }) => (
       <h2>Blogs & Videos.</h2>
     </div>
     <BlogSection />
+    <WhatsAppButton/>
     <Chatbot />
     <Contact />
     <Footer />
