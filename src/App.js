@@ -15,8 +15,9 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import NotificationPage from "./NotificationPage";
 import AdminPage from "./AdminPage";
-import "./App.css";
 import WhatsAppButton from "./components/WhatsAppButton";
+import LoginPage from "./LoginPage"; // 🔑 New import
+import "./App.css";
 
 const Home = ({ onOpenPopup }) => (
   <>
@@ -33,7 +34,7 @@ const Home = ({ onOpenPopup }) => (
       <h2>Blogs & Videos.</h2>
     </div>
     <BlogSection />
-    <WhatsAppButton/>
+    <WhatsAppButton />
     <Chatbot />
     <Contact />
     <Footer />
@@ -42,6 +43,8 @@ const Home = ({ onOpenPopup }) => (
 
 function App() {
   const [showPopup, setShowPopup] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(false); // 🔐 Login state
+
   const openPopup = () => setShowPopup(true);
   const closePopup = () => setShowPopup(false);
 
@@ -50,9 +53,20 @@ function App() {
       <Routes>
         <Route path="/" element={<Home onOpenPopup={openPopup} />} />
         <Route path="/courses" element={<Courses onOpenPopup={openPopup} />} />
-        <Route path="/gallery" element={<Gallery onOpenPopup={openPopup}/>} />
+        <Route path="/gallery" element={<Gallery onOpenPopup={openPopup} />} />
         <Route path="/notification" element={<NotificationPage />} />
-        <Route path="/admin" element={<AdminPage />} />
+
+        {/* 🔐 Simple login protection */}
+        <Route
+          path="/admin"
+          element={
+            loggedIn ? (
+              <AdminPage />
+            ) : (
+              <LoginPage onLogin={() => setLoggedIn(true)} />
+            )
+          }
+        />
       </Routes>
 
       {showPopup && <LetsTalkPopup onClose={closePopup} />}
