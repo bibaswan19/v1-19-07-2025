@@ -14,10 +14,13 @@ import NoticeSection from "./components/NoticeSection";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import NotificationPage from "./NotificationPage";
-import AdminPage from "./AdminPage";
-import WhatsAppButton from "./components/WhatsAppButton";
-import LoginPage from "./LoginPage"; // 🔑 New import
 import StudyMaterialPage from "./StudyMaterialPage";
+import AdminPage from "./AdminPage";
+import NotificationAdmin from "./NotificationAdmin"; // ✅ New
+import StudyMaterialAdmin from "./StudyMaterialAdmin"; // ✅ New
+import LoginPage from "./LoginPage";
+import WhatsAppButton from "./components/WhatsAppButton";
+
 import "./App.css";
 
 const Home = ({ onOpenPopup }) => (
@@ -44,7 +47,7 @@ const Home = ({ onOpenPopup }) => (
 
 function App() {
   const [showPopup, setShowPopup] = useState(false);
-  const [loggedIn, setLoggedIn] = useState(false); // 🔐 Login state
+  const [loggedIn, setLoggedIn] = useState(false);
 
   const openPopup = () => setShowPopup(true);
   const closePopup = () => setShowPopup(false);
@@ -52,18 +55,41 @@ function App() {
   return (
     <>
       <Routes>
+        {/* Public Routes */}
         <Route path="/" element={<Home onOpenPopup={openPopup} />} />
         <Route path="/courses" element={<Courses onOpenPopup={openPopup} />} />
         <Route path="/gallery" element={<Gallery onOpenPopup={openPopup} />} />
         <Route path="/notification" element={<NotificationPage />} />
         <Route path="/study-materials" element={<StudyMaterialPage />} />
 
-        {/* 🔐 Simple login protection */}
+        {/* Admin Login Route */}
         <Route
           path="/admin"
           element={
             loggedIn ? (
               <AdminPage />
+            ) : (
+              <LoginPage onLogin={() => setLoggedIn(true)} />
+            )
+          }
+        />
+
+        {/* Protected Admin Sub-pages */}
+        <Route
+          path="/admin/notifications"
+          element={
+            loggedIn ? (
+              <NotificationAdmin />
+            ) : (
+              <LoginPage onLogin={() => setLoggedIn(true)} />
+            )
+          }
+        />
+        <Route
+          path="/admin/study-materials"
+          element={
+            loggedIn ? (
+              <StudyMaterialAdmin />
             ) : (
               <LoginPage onLogin={() => setLoggedIn(true)} />
             )

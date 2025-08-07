@@ -1,41 +1,40 @@
 .testimonial-section {
   padding: 1rem 1rem;
-  background: linear-gradient(to bottom,  rgba(255, 255, 255, 0.919), rgba(160, 207, 255, 0.8));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.919), rgba(160, 207, 255, 0.8));
   overflow-x: visible;
-  height: 65vh;
 }
 
 .testimonial-container {
   max-width: 78%;
   margin: 0 auto;
-  padding: 5rem 0; 
+  padding: 5rem 0;
   overflow: hidden;
 }
 
 .testimonial-carousel-wrapper {
   position: relative;
   overflow: visible;
-  padding: 0; 
+  padding: 0;
 }
 
-.slick-slider {
-  overflow: visible;
-}
-
+.slick-slider,
 .slick-list {
   overflow: visible !important;
 }
 
 .slick-slide {
-  padding: 0; /* ✅ remove outer spacing */
+  padding: 0;
+  display: flex;
+  height: 100%;
 }
 
 .testimonial-card {
-  margin: 0 1rem; /* ✅ apply spacing inside the card */
-}
-
-
-.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 45vh;
+  margin: 0 1rem;
   background: #fff;
   border-radius: 1rem;
   padding: 2rem;
@@ -64,6 +63,7 @@
   margin-top: 2rem;
   font-size: 0.95rem;
   color: #555;
+  flex-grow: 1;
 }
 
 .testimonial-footer {
@@ -90,9 +90,9 @@
 }
 
 .star.filled {
-  color: #facc15; /* yellow-400 */
+  color: #facc15;
 }
 
 .star.empty {
-  color: #d1d5db; /* gray-300 */
+  color: #d1d5db;
 }
