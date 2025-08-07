@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"; // ✅ import useNavigate
 import "./Navbar.css";
 import logoImage from "../assets/logoimage.png";
 
@@ -8,6 +8,7 @@ const sections = ["home", "about", "popular-courses", "contact-us"];
 const Navbar = ({ onOpenPopup }) => {
   const [activeSection, setActiveSection] = useState("home");
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate(); // ✅ initialize navigation
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,7 +16,7 @@ const Navbar = ({ onOpenPopup }) => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // run once on mount
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -78,7 +79,9 @@ const Navbar = ({ onOpenPopup }) => {
         <button className="sign-in" onClick={onOpenPopup}>
           Let's Talk
         </button>
-        <button className="sign-up">Study Materials</button>
+        <button className="sign-up" onClick={() => navigate("/study-materials")}>
+          Study Materials
+        </button>
       </div>
     </nav>
   );

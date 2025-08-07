@@ -1,5 +1,5 @@
 .admin-page {
-  max-width: 800px;
+  max-width: 90vw;
   margin: 2rem auto;
   padding: 2rem;
   background-color: #f9f9f9;
@@ -8,11 +8,29 @@
   font-family: Arial, sans-serif;
 }
 
+/* Shared Section Styling */
+.admin-section {
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  margin-bottom: 3rem;
+  color: #ffffff;
+}
+
+/* Section-specific Colors */
+.admin-section.notifications {
+  background-color: #94daff; /* blue */
+}
+
+.admin-section.study-materials {
+  background-color: #ffbd76; /* orange */
+}
+
 .admin-title {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  color: #333;
+  color: #3e3e3e;
 }
 
 .admin-notification-list {
@@ -21,7 +39,8 @@
 }
 
 .admin-notification-item {
-  background: #fff;
+  background: #ffffff;
+  color: #000;
   margin-bottom: 1rem;
   padding: 1rem 1.5rem;
   border-radius: 8px;
@@ -41,28 +60,29 @@
 }
 
 .admin-notification-title {
-  color: #333;
+  color: #000;
   display: block;
   font-weight: bold;
 }
 
 .admin-notification-date {
-  color: #666;
+  color: #444;
   font-size: 0.9rem;
 }
 
 .admin-button-group button {
-  background-color: #007bff;
-  color: white;
+  background-color: #0000ff;
+  color: #ffffff;
   border: none;
   padding: 6px 12px;
   margin-left: 0.5rem;
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.9rem;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .admin-button-group button:hover {
-  background-color: #0056b3;
+  background-color: #ffc979;
+  color: #000;
 }

@@ -1,4 +1,4 @@
-.notification-form {
+.study-material-form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -11,11 +11,11 @@
   box-sizing: border-box; /* ensures padding doesn't exceed parent width */
   max-width: 60vw;        /* optional: limits width for better UX */
   margin-left: auto;
-  margin-right: auto;      /* center it horizontally */
+  margin-right: auto;
 }
 
-.notification-form input,
-.notification-form textarea {
+.study-material-form input,
+.study-material-form textarea {
   padding: 0.6rem 0.8rem;
   font-size: 1rem;
   border: 1px solid #ccc;
@@ -25,14 +25,14 @@
   box-sizing: border-box;
 }
 
-.notification-form textarea {
+.study-material-form textarea {
   resize: vertical;
   min-height: 60vh;
 }
 
-.notification-form button {
+.study-material-form button {
   align-self: flex-start;
-  background-color: #28a745;
+  background-color: #00b312;
   color: white;
   border: none;
   padding: 0.6rem 1.2rem;
@@ -42,11 +42,11 @@
   transition: background-color 0.2s ease;
 }
 
-.notification-form button:hover {
-  background-color: #218838;
+.study-material-form button:hover {
+  background-color: #00800d;
 }
 
-.notification-form p {
+.study-material-form p {
   margin: 0;
   font-size: 0.9rem;
   color: red;

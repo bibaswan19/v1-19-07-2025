@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import logoImage from "../assets/logoimage.png";
 
 const CourseNavbar = ({ onOpenPopup }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +18,8 @@ const CourseNavbar = ({ onOpenPopup }) => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  
 
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
@@ -71,7 +74,9 @@ const CourseNavbar = ({ onOpenPopup }) => {
         <button className="sign-in" onClick={onOpenPopup}>
           Let's Talk
         </button>
-        <button className="sign-up">Study Materials</button>
+        <button className="sign-up" onClick={() => navigate("/study-materials")}>
+          Study Materials
+        </button>
       </div>
     </nav>
   );

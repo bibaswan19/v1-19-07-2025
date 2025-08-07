@@ -17,6 +17,7 @@ import NotificationPage from "./NotificationPage";
 import AdminPage from "./AdminPage";
 import WhatsAppButton from "./components/WhatsAppButton";
 import LoginPage from "./LoginPage"; // 🔑 New import
+import StudyMaterialPage from "./StudyMaterialPage";
 import "./App.css";
 
 const Home = ({ onOpenPopup }) => (
@@ -55,6 +56,7 @@ function App() {
         <Route path="/courses" element={<Courses onOpenPopup={openPopup} />} />
         <Route path="/gallery" element={<Gallery onOpenPopup={openPopup} />} />
         <Route path="/notification" element={<NotificationPage />} />
+        <Route path="/study-materials" element={<StudyMaterialPage />} />
 
         {/* 🔐 Simple login protection */}
         <Route
