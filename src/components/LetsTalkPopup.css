@@ -94,3 +94,9 @@ textarea {
 .popup-form {
   flex: 7; /* 70% */
 }
+
+@media (max-width: 600px) {
+.send-bt {
+  min-width: 20rem;
+}
+}

@@ -1,3 +1,4 @@
+/* ===== Desktop Base ===== */
 .navbar {
   display: flex;
   align-items: center;
@@ -7,8 +8,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  transition: box-shadow 0.3s ease;
-  box-shadow: none; /* default: no shadow */
+  transition: box-shadow 0.3s ease, top 0.3s ease;
 }
 
 .navbar.scrolled {
@@ -24,16 +24,13 @@
   height: 10vh;
   width: 20vw;
   object-fit: contain;
-  position: relative;
-  /* left: -7vw; */
 }
 
+/* Nav Links (desktop only) */
 .nav-links {
   display: flex;
   gap: 20px;
   list-style: none;
-  position: relative;
-  /* left: -12vw; */
 }
 
 .nav-link {
@@ -66,29 +63,12 @@
   width: 100%;
 }
 
+/* Buttons */
 .auth-buttons {
   display: flex;
   gap: 15px;
-  position: relative;
-  /* right: 5vw; */
 }
 
-/* Add keyframes for blinking */
-@keyframes blink {
-  0%,
-  100% {
-    background-color: #4228d9;
-    color: white;
-    transform: translateY(-0.5rem);
-  }
-  50% {
-    background-color: rgba(255, 148, 61, 0.153);
-    color: #4228d9;
-    transform: translateY(0.5rem);
-  }
-}
-
-/* Apply blinking animation to the sign-in button */
 .auth-buttons .sign-in {
   background-color: #4228d9;
   color: white;
@@ -100,14 +80,6 @@
   border-radius: 9999px;
   cursor: pointer;
   animation: blink 5s infinite;
-}
-
-/* Stop blinking on hover or focus */
-.auth-buttons .sign-in:hover,
-.auth-buttons .sign-in:focus {
-  animation: none;
-  background-color: rgba(255, 148, 61, 0.153);
-  color: #4228d9;
 }
 
 .auth-buttons .sign-up {
@@ -122,13 +94,90 @@
   cursor: pointer;
 }
 
+@keyframes blink {
+  0%, 100% {
+    background-color: #4228d9;
+    color: white;
+    transform: translateY(-0.5rem);
+  }
+  50% {
+    background-color: rgba(255, 148, 61, 0.153);
+    color: #4228d9;
+    transform: translateY(0.5rem);
+  }
+}
+
+.auth-buttons .sign-in:hover {
+  animation: none;
+  background-color: rgba(255, 148, 61, 0.153);
+  color: #4228d9;
+}
+
 .auth-buttons .sign-up:hover {
   background-color: #4228d9;
   color: white;
 }
 
+/* Hamburger hidden by default */
+.hamburger {
+  display: none;
+}
+
+/* ===== Mobile View ===== */
 @media (max-width: 600px) {
   .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 100vw;
+  }
+
+  /* Hide links in mobile */
+  .nav-links {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background: white;
+    width: 100%;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  /* Smaller logo */
+  .logo {
+    margin-left: -10px;
+  }
+  .logo-img {
+    width: 60px;
+    height: auto;
+  }
+
+  /* Buttons in middle */
+  .auth-buttons {
+    flex-grow: 1;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .auth-buttons button {
+    min-width: 7rem;
+    padding: 6px 10px;
+    font-size: 0.65rem;
+    height: auto;
+    border-radius: 9999px;
+  }
+
+  /* Hamburger right */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
   }
 }

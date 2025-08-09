@@ -20,7 +20,11 @@
 }
 
 .course-item {
-  background: linear-gradient(to bottom , rgb(255, 229, 201) 0%, rgb(255, 255, 255) 80%);
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 229, 201) 0%,
+    rgb(255, 255, 255) 80%
+  );
   padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
@@ -112,7 +116,6 @@
   margin: 0;
 }
 
-
 .subtopics .arrow {
   color: rgba(0, 123, 255, 0.513);
 }
@@ -126,4 +129,10 @@
 
 .download-icon:hover {
   color: rgb(0, 123, 255);
+}
+
+@media (max-width: 600px) {
+  .course-info h2 {
+    font-size: 1.3rem;
+  }
 }
