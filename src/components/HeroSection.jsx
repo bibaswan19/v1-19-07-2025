@@ -7,7 +7,7 @@ const HeroSection = () => {
     <div className="hero-container" id="home">
       <div className="hero-left">
         <p className="hero-offer">✅ Get 30% off on first enroll</p>
-        <h1>YOUR SUCCESS ,OUR GOAL</h1>
+        <h1>YOUR SUCCESS, OUR GOAL</h1>
         <p className="hero-subtext">
           There’s no shortcut to success, but there’s always the right guidance – find it at Bibaswan.
         </p>

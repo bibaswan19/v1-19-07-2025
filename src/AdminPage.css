@@ -1,11 +1,9 @@
 .admin-page {
-  max-width: 90vw;
-  margin: 2rem auto;
+  width: 100vw;
   padding: 2rem;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
+  background-color: #ff6a0058;
   font-family: Arial, sans-serif;
+  height: 100vh;
 }
 
 /* Shared Section Styling */

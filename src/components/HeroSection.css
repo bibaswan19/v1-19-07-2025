@@ -87,3 +87,48 @@
   top: 20px;
   right: -40px;
 }
+
+/* ===== MOBILE VIEW ===== */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .hero-left {
+    padding-right: 0;
+  }
+
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+
+  .hero-subtext {
+    font-size: 1rem;
+  }
+
+  .hero-tags span {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-right {
+    margin-top: 1.5rem;
+  }
+
+  .hero-right img {
+    height: auto;
+    width: 100%;
+    max-height: 300px;
+  }
+
+  .badge-course, .badge-stats {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    display: inline-block;
+    margin: 0.5rem;
+  }
+}

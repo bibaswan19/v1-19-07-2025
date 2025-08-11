@@ -30,7 +30,7 @@ const NotificationAdmin = () => {
   };
 
   return (
-    <div className="admin-section">
+    <div className="admin-section" style={{ backgroundColor: "#daf2ffff" }}>
       <h2 className="admin-title">Manage Notifications</h2>
       <NotificationForm
         onSubmit={handleNotificationSave}

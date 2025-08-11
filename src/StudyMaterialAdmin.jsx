@@ -30,7 +30,7 @@ const StudyMaterialAdmin = () => {
   };
 
   return (
-    <div className="admin-section">
+    <div className="admin-section" style={{ backgroundColor: "#ffe5daff" }}>
       <h2 className="admin-title">Manage Study Materials</h2>
       <StudyMaterialForm
         onSubmit={handleMaterialSave}
