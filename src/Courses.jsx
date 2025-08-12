@@ -8,14 +8,14 @@ import Footer from "./components/Footer";
 const courses = [
   {
     title: "UPSC",
-    image: require("./assets/regulatory-agencies-blue-gradient-concept-icon-regulatory-agencies-blue-gradient-concept-icon-test-control-safety-clinical-242938439.webp"),
+    image: require("./assets/UPSC.png"),
     subtopics: [
       { title: "CIVIL SERVICE EXAMINATIONS (C.S.E) ", pdf: "/pdfs/rbi.pdf", description: "Complete preparation for UPSC Civil Services Examination (CSE) covering Prelims, Mains, and Interview with expert mentorship and updated study materials." },
     ],
   },
   {
     title: "DEFENCE COURSE",
-    image: require("./assets/National_Defence_Academy_NDA.png"),
+    image: require("./assets/DEFENSE.jpg"),
     subtopics: [
       { title: "NDA", pdf: "/pdfs/nda.pdf", description: "Prepares students for the National Defence Academy entrance exams with complete syllabus coverage." },
       { title: "CDS", pdf: "/pdfs/cds.pdf", description: "Focused course for Combined Defence Services exam with regular mock tests and guidance." },
@@ -32,25 +32,17 @@ const courses = [
       { title: "WBP", pdf: "/pdfs/icds.pdf", description: "Focused preparation for West Bengal Police (WBP) Constable and SI exams with updated syllabus coverage, mock tests, and expert support." },
     ],
   },
-  {
-    title: "COMBINED EXAMS",
-    image: require("./assets/unnamed.png"),
-    subtopics: [
-      { title: "SSC", pdf: "/pdfs/ssc.pdf", description: "CGL, CHSL and other SSC tier exams with full syllabus support." },
-      { title: "BANK", pdf: "/pdfs/banking.pdf", description: "Complete coaching for Bank exams like IBPS, SBI, and RBI with updated materials, mock tests, and expert-led classes for Prelims and Mains." },
-      { title: "RAIL", pdf: "/pdfs/rail-police.pdf", description: "Thorough preparation for Railway exams like RRB NTPC, Group D, and ALP with latest syllabus coverage, practice sets, and expert guidance." },
-    ],
-  },
+ 
   {
     title: "STAFF SELECTION COMMISION (SSC ) ",
-    image: require("./assets/unnamed.png"),
+    image: require("./assets/SSC.jpg"),
     subtopics: [
       { title: "SSC", pdf: "/pdfs/ssc.pdf", description: "CGL, CHSL and other SSC tier exams with full syllabus support." },
     ],
   },
   {
     title: "BANKING",
-    image: require("./assets/unnamed.png"),
+    image: require("./assets/Banking.jpg"),
     subtopics: [
       { title: "P.O", pdf: "/pdfs/ssc.pdf", description: "Expert-led preparation for Bank P.O. exams (IBPS, SBI, etc.) with focused training on Prelims, Mains, and Interview rounds." },
       { title: "CLERK", pdf: "/pdfs/ssc.pdf", description: "Structured coaching for Bank Clerk exams (IBPS, SBI, etc.) with updated syllabus, regular mock tests, and personalized guidance." },
@@ -58,21 +50,21 @@ const courses = [
   },
    {
     title: "RAIL",
-    image: require("./assets/unnamed.png"),
+    image: require("./assets/Rail.png"),
     subtopics: [
       { title: "RAIL", pdf: "/pdfs/ssc.pdf", description: "Comprehensive preparation for Railway exams like RRB NTPC, Group D, ALP, and Technician with updated content, mock tests, and expert support." },
     ],
   },
   {
     title: "LAW ENTRANCE",
-    image: require("./assets/adalet-logo-png_seeklogo-341382.png"),
+    image: require("./assets/Law.jpg"),
     subtopics: [
       { title: "CLAT", pdf: "/pdfs/clat.pdf", description: "Focused preparation for CLAT with expert faculty, updated legal reasoning materials, mock tests, and personalized mentorship for top law school admissions." },
     ],
   },
   {
     title: "MANAGEMENT ENTRANCE",
-    image: require("./assets/management-logo.webp"),
+    image: require("./assets/CAT.jpg"),
     subtopics: [
       { title: "CAT", pdf: "/pdfs/cat.pdf", description: "Quant, DILR, and VARC with CAT-specific strategies." },
       { title: "MAT", pdf: "/pdfs/mat.pdf", description: "Covers the Management Aptitude Test with timed tests." },
