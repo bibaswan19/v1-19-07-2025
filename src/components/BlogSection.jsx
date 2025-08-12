@@ -2,43 +2,79 @@ import React from "react";
 import Slider from "react-slick";
 import "./BlogSection.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import I1 from "../assets/g2.jpg";
 
 const blogData = [
   {
     id: 1,
-    title: "How to Improve Your Coding Skills",
-    date: "July 10, 2025",
-    image: I1,
+    title: "UPSC Preparation Tips – Achieve Success with Right Guidance",
+    date: "Aug 11, 2025",
+    image: "https://img.youtube.com/vi/qmiHzllUy08/maxresdefault.jpg",
     excerpt:
-      "Discover practical tips to level up your programming journey.",
-    link: "https://example.com/blog/coding-skills",
+      "Essential UPSC preparation tips to help you prepare efficiently for success.",
+    link: "https://youtu.be/qmiHzllUy08?si=WCjRCNJqTlY4Fn3I",
   },
   {
     id: 2,
-    title: "React Best Practices in 2025",
-    date: "July 5, 2025",
-    image: I1,
+    title: "Bibaswan – Motivational Clip for Aspirants",
+    date: "Aug 11, 2025",
+    image: "https://img.youtube.com/vi/fAjHyTTc-8I/maxresdefault.jpg",
     excerpt:
-      "Explore modern conventions for writing clean, scalable React code.",
-    link: "https://example.com/blog/react-best-practices",
+      "A short motivational clip to inspire UPSC and competitive exam aspirants.",
+    link: "https://youtube.com/shorts/fAjHyTTc-8I?si=PidTtiTu1OhFu0hn",
   },
   {
     id: 3,
-    title: "UI/UX Design Tips for Developers",
-    date: "June 28, 2025",
-    image: I1,
+    title: "Success Story – Never Give Up",
+    date: "Aug 11, 2025",
+    image: "https://img.youtube.com/vi/nFCqShOczgM/maxresdefault.jpg",
     excerpt:
-      "Understand how developers can create visually pleasing interfaces.",
-    link: "https://example.com/blog/ui-ux-tips",
+      "An inspiring success story to remind you that perseverance always pays off.",
+    link: "https://youtube.com/shorts/nFCqShOczgM?si=JV4OZXHAkrHT6UTI",
   },
   {
     id: 4,
-    title: "JavaScript Performance Optimization",
-    date: "June 15, 2025",
-    image: I1,
-    excerpt: "Learn techniques to make your JS apps run faster and smoother.",
-    link: "https://example.com/blog/js-performance",
+    title: "Time Management for UPSC Preparation",
+    date: "Aug 11, 2025",
+    image: "https://img.youtube.com/vi/35ET1gT1mGo/maxresdefault.jpg",
+    excerpt:
+      "Learn how to manage your time effectively during UPSC preparation.",
+    link: "https://youtube.com/shorts/35ET1gT1mGo?si=J6oaEoI_RiSShb7l",
+  },
+  {
+    id: 5,
+    title: "Daily Motivation for Competitive Exams",
+    date: "Aug 11, 2025",
+    image: "https://img.youtube.com/vi/Ocn5tRIr1uk/maxresdefault.jpg",
+    excerpt:
+      "Daily motivation to keep you consistent and focused on your exam goals.",
+    link: "https://youtube.com/shorts/Ocn5tRIr1uk?si=TWk0nZtS7tqEvyq7",
+  },
+  {
+    id: 6,
+    title: "Push Your Limits – Stay Consistent",
+    date: "Aug 11, 2025",
+    image: "https://img.youtube.com/vi/1XPt9NY-SP4/maxresdefault.jpg",
+    excerpt:
+      "A reminder that success comes to those who push their limits every day.",
+    link: "https://youtube.com/shorts/1XPt9NY-SP4?si=ayQjTtjHaSCawN64",
+  },
+  {
+    id: 7,
+    title: "Powerful Motivation for UPSC Students",
+    date: "Aug 11, 2025",
+    image: "https://img.youtube.com/vi/X0n6-UAgANE/maxresdefault.jpg",
+    excerpt:
+      "Powerful motivational words to boost your energy and focus.",
+    link: "https://youtube.com/shorts/X0n6-UAgANE?si=XIvbyRN2rFPVBO86",
+  },
+  {
+    id: 8,
+    title: "Discipline – The Key to Cracking Exams",
+    date: "Aug 11, 2025",
+    image: "https://img.youtube.com/vi/QctU9SDnYt4/maxresdefault.jpg",
+    excerpt:
+      "Discipline is the foundation of success in any competitive examination.",
+    link: "https://youtube.com/shorts/QctU9SDnYt4?si=6IRFb3XVcf_pibj0",
   },
 ];
 
@@ -99,7 +135,7 @@ const BlogSection = () => {
                       rel="noopener noreferrer"
                       className="read-more-btn"
                     >
-                      Read More
+                      Watch Video
                     </a>
                   </div>
                 </div>
