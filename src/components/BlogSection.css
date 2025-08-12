@@ -1,6 +1,6 @@
 .blog-section {
   padding: 4rem 1rem;
-  background-color: #f4f7ff;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.919), rgba(226, 240, 255, 0.8));
 }
 
 .blog-container {
