@@ -132,6 +132,9 @@
     flex-direction: row;
     max-width: 100vw;
     position: sticky;
+    top: 0; /* ✅ Needed for sticky to work */
+    z-index: 1000; /* ✅ Ensure it stays above content */
+    background-color: white; /* ✅ Avoid transparency issues */
   }
 
   /* Hide links in mobile */
@@ -182,4 +185,5 @@
     font-size: 1.5rem;
   }
 }
+
 
