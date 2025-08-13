@@ -19,50 +19,88 @@ const CourseNavbar = ({ onOpenPopup }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleSectionClick = (sectionId) => {
-    if (location.pathname === "/") {
-      document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault();
+    setMenuOpen(false); // close menu in mobile
+    if (location.pathname !== "/") {
+      navigate(`/#${targetId}`);
     } else {
-      navigate(`/#${sectionId}`);
-      setTimeout(() => {
-        document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
-      }, 100);
+      document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" });
     }
-    setMenuOpen(false);
   };
 
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
+      {/* Logo */}
       <div className="logo">
         <img src={logoImage} alt="Logo" className="logo-img" />
       </div>
 
+      {/* Nav Links */}
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
         <li>
-          <Link to="/" className="nav-link" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link to="/" className="nav-link" onClick={() => setMenuOpen(false)}>
+            Home
+          </Link>
         </li>
         <li>
-          <button className="nav-link" onClick={() => handleSectionClick("about")}>About</button>
+          <a
+            href="/#about"
+            className="nav-link"
+            onClick={(e) => handleNavClick(e, "about")}
+          >
+            About
+          </a>
         </li>
         <li>
-          <button className="nav-link" onClick={() => handleSectionClick("popular-courses")}>Popular Courses</button>
+          <a
+            href="/#popular-courses"
+            className="nav-link"
+            onClick={(e) => handleNavClick(e, "popular-courses")}
+          >
+            Popular Courses
+          </a>
         </li>
         <li>
-          <button className="nav-link" onClick={() => handleSectionClick("contact-us")}>Contact Us</button>
+          <a
+            href="/#contact-us"
+            className="nav-link"
+            onClick={(e) => handleNavClick(e, "contact-us")}
+          >
+            Contact Us
+          </a>
         </li>
         <li>
-          <Link to="/gallery" className={`nav-link ${location.pathname === "/gallery" ? "active" : ""}`} onClick={() => setMenuOpen(false)}>Gallery</Link>
+          <Link
+            to="/gallery"
+            className={`nav-link ${location.pathname === "/gallery" ? "active" : ""}`}
+            onClick={() => setMenuOpen(false)}
+          >
+            Gallery
+          </Link>
         </li>
         <li>
-          <Link to="/courses" className={`nav-link ${location.pathname === "/courses" ? "active" : ""}`} onClick={() => setMenuOpen(false)}>Courses</Link>
+          <Link
+            to="/courses"
+            className={`nav-link ${location.pathname === "/courses" ? "active" : ""}`}
+            onClick={() => setMenuOpen(false)}
+          >
+            Courses
+          </Link>
         </li>
       </ul>
 
+      {/* Auth Buttons */}
       <div className="auth-buttons">
-        <button className="sign-in" onClick={onOpenPopup}>Let's Talk</button>
-        <button className="sign-up" onClick={() => navigate("/study-materials")}>Study Materials</button>
+        <button className="sign-in" onClick={onOpenPopup}>
+          Let's Talk
+        </button>
+        <button className="sign-up" onClick={() => navigate("/study-materials")}>
+          Study Materials
+        </button>
       </div>
 
+      {/* Hamburger */}
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
         <Icon icon="mdi:menu" width="28" />
       </div>
