@@ -32,13 +32,13 @@ const CourseNavbar = ({ onOpenPopup }) => {
           <Link to="/" className="nav-link" onClick={() => setMenuOpen(false)}>Home</Link>
         </li>
         <li>
-          <a href="#about" className="nav-link" onClick={() => setMenuOpen(false)}>About</a>
+          <a href="/#about" className="nav-link" onClick={() => setMenuOpen(false)}>About</a>
         </li>
         <li>
-          <a href="#popular-courses" className="nav-link" onClick={() => setMenuOpen(false)}>Popular Courses</a>
+          <a href="/#popular-courses" className="nav-link" onClick={() => setMenuOpen(false)}>Popular Courses</a>
         </li>
         <li>
-          <a href="#contact-us" className="nav-link" onClick={() => setMenuOpen(false)}>Contact Us</a>
+          <a href="/#contact-us" className="nav-link" onClick={() => setMenuOpen(false)}>Contact Us</a>
         </li>
         <li>
           <Link
@@ -79,3 +79,4 @@ const CourseNavbar = ({ onOpenPopup }) => {
 };
 
 export default CourseNavbar;
+
