@@ -35,7 +35,7 @@ const courses = [
  
   {
     title: "STAFF SELECTION COMMISION (SSC ) ",
-    image: require("./assets/SSC.jpg"),
+    image: require("./assets/ssc_logo.png"),
     subtopics: [
       { title: "SSC", pdf: "/pdfs/ssc.pdf", description: "CGL, CHSL and other SSC tier exams with full syllabus support." },
     ],
@@ -148,3 +148,4 @@ const Courses = ({ onOpenPopup }) => {
 };
 
 export default Courses;
+
