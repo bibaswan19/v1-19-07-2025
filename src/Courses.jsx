@@ -34,7 +34,7 @@ const courses = [
   },
  
   {
-    title: "STAFF SELECTION COMMISION (SSC ) ",
+    title: "STAFF SELECTION COMMISION (SSC) ",
     image: require("./assets/ssc_logo.png"),
     subtopics: [
       { title: "SSC", pdf: "/pdfs/ssc.pdf", description: "CGL, CHSL and other SSC tier exams with full syllabus support." },
@@ -50,7 +50,7 @@ const courses = [
   },
    {
     title: "RAIL",
-    image: require("./assets/Rail.png"),
+    image: require("./assets/Railbg.png"),
     subtopics: [
       { title: "RAIL", pdf: "/pdfs/ssc.pdf", description: "Comprehensive preparation for Railway exams like RRB NTPC, Group D, ALP, and Technician with updated content, mock tests, and expert support." },
     ],
@@ -148,4 +148,5 @@ const Courses = ({ onOpenPopup }) => {
 };
 
 export default Courses;
+
 
