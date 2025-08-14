@@ -8,14 +8,14 @@ import Footer from "./components/Footer";
 const courses = [
   {
     title: "UPSC",
-    image: require("./assets/UPSC.png"),
+    image: require("./assets/UPSCbg.png"),
     subtopics: [
       { title: "CIVIL SERVICE EXAMINATIONS (C.S.E) ", pdf: "/pdfs/rbi.pdf", description: "Complete preparation for UPSC Civil Services Examination (CSE) covering Prelims, Mains, and Interview with expert mentorship and updated study materials." },
     ],
   },
   {
     title: "DEFENCE COURSE",
-    image: require("./assets/DEFENSE.jpg"),
+    image: require("./assets/DEFENSEbg.png"),
     subtopics: [
       { title: "NDA", pdf: "/pdfs/nda.pdf", description: "Prepares students for the National Defence Academy entrance exams with complete syllabus coverage." },
       { title: "CDS", pdf: "/pdfs/cds.pdf", description: "Focused course for Combined Defence Services exam with regular mock tests and guidance." },
@@ -57,7 +57,7 @@ const courses = [
   },
   {
     title: "LAW ENTRANCE",
-    image: require("./assets/Law.jpg"),
+    image: require("./assets/Lawbg.png"),
     subtopics: [
       { title: "CLAT", pdf: "/pdfs/clat.pdf", description: "Focused preparation for CLAT with expert faculty, updated legal reasoning materials, mock tests, and personalized mentorship for top law school admissions." },
     ],
@@ -148,5 +148,6 @@ const Courses = ({ onOpenPopup }) => {
 };
 
 export default Courses;
+
 
 
