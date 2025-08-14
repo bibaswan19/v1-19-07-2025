@@ -73,7 +73,7 @@ const courses = [
   },
   {
     title: "SOFT SKILLS & TECH",
-    image: require("./assets/soft-skills-training.jpg"),
+    image: require("./assets/soft-skills-training.png"),
     subtopics: [
       { title: "SPOKEN ENGLISH", pdf: "/pdfs/spoken.pdf", description: "Interactive sessions to improve English speaking fluency." },
       { title: "PERSONALITY DEVELOPMENT", pdf: "/pdfs/personality.pdf", description: "Confidence building, interviews, and soft skills training." },
@@ -148,6 +148,7 @@ const Courses = ({ onOpenPopup }) => {
 };
 
 export default Courses;
+
 
 
 
