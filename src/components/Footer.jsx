@@ -36,7 +36,7 @@ const Footer = () => {
       <hr />
 
       <div className="footer-bottom">
-        <p>@2025 Agency. All Rights Reserved by Sikharthy Infotech Pvt. Ltd.</p>
+        <p>@2025 Agency. <a href="www.siplhub.com" >All Rights Reserved by Sikharthy Infotech Pvt. Ltd.</a></p>
         <div className="footer-policy">
           <a href="/Privacy policy">Privacy policy</a>
           <a href="/terms">Terms & conditions</a>
@@ -47,3 +47,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
