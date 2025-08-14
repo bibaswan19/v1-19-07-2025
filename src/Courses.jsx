@@ -42,7 +42,7 @@ const courses = [
   },
   {
     title: "BANKING",
-    image: require("./assets/Banking.jpg"),
+    image: require("./assets/banking.png"),
     subtopics: [
       { title: "P.O", pdf: "/pdfs/ssc.pdf", description: "Expert-led preparation for Bank P.O. exams (IBPS, SBI, etc.) with focused training on Prelims, Mains, and Interview rounds." },
       { title: "CLERK", pdf: "/pdfs/ssc.pdf", description: "Structured coaching for Bank Clerk exams (IBPS, SBI, etc.) with updated syllabus, regular mock tests, and personalized guidance." },
@@ -148,6 +148,7 @@ const Courses = ({ onOpenPopup }) => {
 };
 
 export default Courses;
+
 
 
 
