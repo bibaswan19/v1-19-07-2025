@@ -36,7 +36,7 @@ const Footer = () => {
       <hr />
 
       <div className="footer-bottom">
-        <p>©2025. All Rights Reserved by <a href="www.siplhub.com/">Sikharthy Infotech Pvt. Ltd</a>.</p>
+        <p>©2025. All Rights Reserved by <a href="siplhub.com/">Sikharthy Infotech Pvt. Ltd</a>.</p>
         <div className="footer-policy">
           <a href="/Privacy policy">Privacy policy</a>
           <a href="/terms">Terms & conditions</a>
@@ -47,4 +47,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
