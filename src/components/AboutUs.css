@@ -16,7 +16,7 @@
 }
 
 .about-text {
-  max-width: 600px;
+  max-width: 60vw;
 }
 
 .about-text h2 {
@@ -32,7 +32,7 @@
 }
 
 .about-img {
-  max-width: 480px;
+  max-width: 20vw;
   width: 100%;
   border-radius: 8px;
   object-fit: cover;
@@ -80,10 +80,12 @@
   .mission-text {
     padding-left: 0;
     margin-top: 30px;
+    text-align: left;
   }
 
   .about-text {
     margin-bottom: 30px;
+    text-align: left;
   }
 }
 

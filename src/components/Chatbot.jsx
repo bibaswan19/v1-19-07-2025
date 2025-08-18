@@ -38,7 +38,7 @@ const Chatbot = () => {
           break;
 
         case "/contact":
-          botText = `📞 Phone: +919641592339\n📧 Email: info@example.com`;
+          botText = `📞 Phone: +919641592339\n📧 Email: bibaswanedu@gmail.com`;
           break;
 
         case "/enquiry":

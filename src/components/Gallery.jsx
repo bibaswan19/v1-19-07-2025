@@ -10,12 +10,9 @@ import G4 from "../assets/g4.jpg";
 import G5 from "../assets/g5.jpg";
 import G6 from "../assets/g6.jpg";
 import G7 from "../assets/g7.jpg";
-import G8 from "../assets/g8.jpg";
-import G9 from "../assets/g9.jpg";
-import G10 from "../assets/g10.jpg";
 import Footer from "./Footer.jsx";
 
-const panels = [G1, G2, G3, G4, G5, G6, G7, G8, G9, G10];
+const panels = [G1, G2, G3, G4, G5, G6, G7];
 const angle = 180 / (panels.length - 1);
 
 export default function ThreeDGallery({ onOpenPopup }) {

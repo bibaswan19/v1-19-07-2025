@@ -19,7 +19,7 @@ const Contact = () => {
             </div>
             <div className="contact-item">
               <span>📧</span>
-              <p>info@Bibaswan.com</p>
+              <p>bibaswanedu@gmail.com</p>
             </div>
             <div className="contact-item">
               <span>📞</span>

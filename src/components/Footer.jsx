@@ -13,22 +13,42 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Links</h4>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact-us">Contact us</a></li>
-            <li><a href="/gallery">Gallery</a></li>
-            <li><a href="/courses">Courses</a></li>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="#about">About Us</a>
+            </li>
+            <li>
+              <a href="#contact-us">Contact us</a>
+            </li>
+            <li>
+              <a href="/gallery">Gallery</a>
+            </li>
+            <li>
+              <a href="/courses">Courses</a>
+            </li>
           </ul>
         </div>
 
         <div className="footer-column">
           <h4>Other</h4>
           <ul>
-            <li><a href="/notification">Notifications</a></li>
-            <li><a href="#popular-courses">Popular-Courses</a></li>    
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#blogs">Blogs</a></li>
-            <li><a href="#blogs">Videos</a></li>
+            <li>
+              <a href="/notification">Notifications</a>
+            </li>
+            <li>
+              <a href="#popular-courses">Popular-Courses</a>
+            </li>
+            <li>
+              <a href="#testimonials">Testimonials</a>
+            </li>
+            <li>
+              <a href="#blogs">Blogs</a>
+            </li>
+            <li>
+              <a href="#blogs">Videos</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -36,10 +56,19 @@ const Footer = () => {
       <hr />
 
       <div className="footer-bottom">
-        <p>©2025. All Rights Reserved by <a href="siplhub.com">Sikharthy Infotech Pvt. Ltd</a>.</p>
+        <p>
+          ©2025. All Rights Reserved by{" "}
+          <a
+            href="https://siplhub.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Sikharthy Infotech Pvt. Ltd.
+          </a>
+        </p>
         <div className="footer-policy">
-          <a href="/Privacy policy">Privacy policy</a>
-          <a href="/terms">Terms & conditions</a>
+          <a href="/Privacy.html" target="_blank" rel="noopener noreferrer">Privacy policy</a>
+          <a href="/termsandcondition.html" target="_blank" rel="noopener noreferrer">Terms & conditions</a>
         </div>
       </div>
     </footer>
@@ -47,6 +76,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
-

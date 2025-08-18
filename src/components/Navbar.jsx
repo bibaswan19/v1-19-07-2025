@@ -22,26 +22,26 @@ const Navbar = ({ onOpenPopup }) => {
   }, []);
 
   useEffect(() => {
-    const observers = [];
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        threshold: 0,                // trigger immediately
+        rootMargin: "-50% 0px -50% 0px", // activates when section hits middle/top
+      }
+    );
+
     sections.forEach((id) => {
       const section = document.getElementById(id);
-      if (!section) return;
-
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            setActiveSection(id);
-          }
-        },
-        { threshold: 0.6 }
-      );
-
-      observer.observe(section);
-      observers.push(observer);
+      if (section) observer.observe(section);
     });
-    return () => {
-      observers.forEach((observer) => observer.disconnect());
-    };
+
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -51,7 +51,7 @@ const Navbar = ({ onOpenPopup }) => {
         <img src={logoImage} alt="Logo" className="logo-img" />
       </div>
 
-      {/* Navigation Links (desktop only) */}
+      {/* Navigation Links */}
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
         {sections.map((id) => (
           <li key={id} onClick={() => setMenuOpen(false)}>
@@ -85,7 +85,7 @@ const Navbar = ({ onOpenPopup }) => {
         </button>
       </div>
 
-      {/* Hamburger for mobile */}
+      {/* Hamburger (mobile) */}
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
         <Icon icon="mdi:menu" width="28" />
       </div>

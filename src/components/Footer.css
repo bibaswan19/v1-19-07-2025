@@ -75,6 +75,16 @@ hr {
   text-align: center;
 }
 
+.footer-bottom a {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #4f46e5;
+  text-decoration: underline;
+}
+
 .footer-policy a {
   margin: 0 0.5rem;
   color: #666;
