@@ -59,10 +59,10 @@ const Contact = () => {
                 </span>
                 <span>
                   <a
-                    href="https://youtube.com/@bibaswaneducationalfoundation1?si=FAh_e2WiXZ_abnbc"
+                    href="https://t.me/Bibaswan2024"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="yt"
+                    className="tg"
                   >
                     <i className="fab fa-telegram-plane"></i>
                   </a>
@@ -90,6 +90,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
 
 
