@@ -57,6 +57,16 @@ const Contact = () => {
                     <i className="fab fa-youtube"></i>
                   </a>
                 </span>
+                <span>
+                  <a
+                    href="https://youtube.com/@bibaswaneducationalfoundation1?si=FAh_e2WiXZ_abnbc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="yt"
+                  >
+                    <i className="fab fa-telegram-plane"></i>
+                  </a>
+                </span>
               </p>
             </div>
           </div>
@@ -80,5 +90,6 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
 
