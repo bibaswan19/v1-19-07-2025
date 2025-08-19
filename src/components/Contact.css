@@ -75,7 +75,7 @@
 }
 .social-icons a.x:hover {
   transform: translateY(-0.5rem);
-  color: #feffde;
+  color: #ff0000;
 }
 
 
@@ -109,3 +109,4 @@
     min-width: 100%;
   }
 }
+
