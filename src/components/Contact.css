@@ -73,7 +73,7 @@
   transform: translateY(-0.5rem);
   color: #002afe;
 }
-.social-icons a.x:hover {
+.social-icons a.yt:hover {
   transform: translateY(-0.5rem);
   color: #ff0000;
 }
@@ -109,4 +109,5 @@
     min-width: 100%;
   }
 }
+
 
