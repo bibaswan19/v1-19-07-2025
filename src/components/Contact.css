@@ -77,6 +77,10 @@
   transform: translateY(-0.5rem);
   color: #ff0000;
 }
+.social-icons a.tg:hover {
+  transform: translateY(-0.5rem);
+  color: #229ED9;
+}
 
 
 .map-container {
@@ -109,6 +113,7 @@
     min-width: 100%;
   }
 }
+
 
 
 
