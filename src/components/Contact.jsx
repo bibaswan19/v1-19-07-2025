@@ -29,7 +29,7 @@ const Contact = () => {
               <p>
                 <span>
                   <a
-                    href="https://www.instagram.com/yourprofile"
+                    href="https://www.instagram.com/bibaswanedufoundation?igsh=c2loZGpoMXk1YXR2"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="ig"
@@ -39,7 +39,7 @@ const Contact = () => {
                 </span>
                 <span>
                   <a
-                    href="https://www.facebook.com/yourprofile"
+                    href="https://www.facebook.com/Bibaswans.e.f/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="fb"
@@ -49,10 +49,10 @@ const Contact = () => {
                 </span>
                 <span>
                   <a
-                    href="https://x.com"
+                    href="https://youtube.com/@bibaswaneducationalfoundation1?si=FAh_e2WiXZ_abnbc"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="x"
+                    className="yt"
                   >
                     <i className="fab fa-youtube"></i>
                   </a>
@@ -80,4 +80,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
