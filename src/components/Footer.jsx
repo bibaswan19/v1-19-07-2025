@@ -67,8 +67,8 @@ const Footer = () => {
           </a>
         </p>
         <div className="footer-policy">
-          <a href="/Privacy.html" target="_blank" rel="noopener noreferrer">Privacy policy</a>
-          <a href="/termsandcondition.html" target="_blank" rel="noopener noreferrer">Terms & conditions</a>
+          <a href="/Privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+          <a href="/termsandcondition.html" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
         </div>
       </div>
     </footer>
@@ -76,3 +76,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
