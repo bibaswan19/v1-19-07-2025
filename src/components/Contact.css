@@ -55,12 +55,12 @@
 }
 
 .social-icons span {
-  margin-right: 3rem;
+  margin-right: 2rem;
 }
 
 .social-icons a {
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   transition: color 0.3s ease, transform 0.3s ease;
   display: inline-block;
 }
@@ -109,5 +109,6 @@
     min-width: 100%;
   }
 }
+
 
 
