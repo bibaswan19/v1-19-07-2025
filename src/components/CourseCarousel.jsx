@@ -4,13 +4,13 @@ import "./CourseCarousel.css";
 
 const CourseCarousel = ({ onOpenPopup }) => {
   const courseData = [
-    { title: "UPSC CSE", author: "View Price ₹", image: require("../assets/c2.jpeg") },
-    { title: "BANKING", author: "View Price ₹", image: require("../assets/c2.jpeg") },
-    { title: "NDA", author: "View Price ₹", image: require("../assets/c2.jpeg") },
-    { title: "FOOD SI", author: "View Price ₹", image: require("../assets/c2.jpeg") },
-    { title: "LSAT", author: "View Price ₹", image: require("../assets/c1.jpeg") },
-    { title: "MAT", author: "View Price ₹", image: require("../assets/c1.jpeg") },
-    { title: "CAT", author: "View Price ₹", image: require("../assets/c1.jpeg") },
+    { title: "UPSC CSE", image: require("../assets/c2.jpeg") },
+    { title: "BANKING", image: require("../assets/c2.jpeg") },
+    { title: "NDA", image: require("../assets/c2.jpeg") },
+    { title: "FOOD SI", image: require("../assets/c2.jpeg") },
+    { title: "LSAT", image: require("../assets/c1.jpeg") },
+    { title: "MAT", image: require("../assets/c1.jpeg") },
+    { title: "CAT", image: require("../assets/c1.jpeg") },
   ];
 
   const settings = {
@@ -58,12 +58,13 @@ const CourseCarousel = ({ onOpenPopup }) => {
               </button>
             </div>
             <h3>{course.title}</h3>
-            <p>{course.author}</p>
+{/*             <p>{course.author}</p> */}
           </div>
         ))}
       </Slider>
     </div>
   );
 };
+
 
 export default CourseCarousel;
