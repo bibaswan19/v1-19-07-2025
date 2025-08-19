@@ -54,7 +54,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="x"
                   >
-                    <i className="fab fa-x-twitter"></i>
+                    <i className="fab fa-youtube"></i>
                   </a>
                 </span>
               </p>
@@ -80,3 +80,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
