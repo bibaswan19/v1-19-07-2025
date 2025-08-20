@@ -10,7 +10,7 @@ const AboutUs = () => {
         <div className="about-text">
           <h2>About Us</h2>
           <p>
-            <b>“ Education is the manifestation of perfection already in man “ -
+            <b>"Education is the manifestation of perfection already in man " <br/> -
             Swami Vivekananda</b><br/>And we the Bibaswan Educational Foundation firmly
             believe in this .We, The Bibaswan Educational Foundation, believe
             that education is not just about acquiring knowledge—it is about
@@ -61,3 +61,4 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+
