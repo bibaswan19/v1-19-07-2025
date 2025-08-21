@@ -38,7 +38,7 @@
 }
 
 .course-card {
-  background: #fff;
+  background: #ff7700;
   border-radius: 1rem;
   padding: 2rem;
   position: relative;
@@ -91,3 +91,4 @@
     min-width: 50vw;
   }
 }
+
