@@ -70,10 +70,10 @@ const LetsTalkPopup = ({ onClose }) => {
 
     emailjs
       .send(
-        "service_hkwtbb9",
-        "template_no5aqqq",
+        "service_mahgb4p",
+        "template_2n39bi4",
         templateParams,
-        "eorCp8jsra8V0B3OH"
+        "ryVAjQoFUrgCz3vHr"
       )
       .then(() => {
         alert("Message sent successfully!");
@@ -198,4 +198,5 @@ const LetsTalkPopup = ({ onClose }) => {
 };
 
 export default LetsTalkPopup;
+
 
