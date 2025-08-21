@@ -4,14 +4,17 @@ import "./CourseCarousel.css";
 
 const CourseCarousel = ({ onOpenPopup }) => {
   const courseData = [
-    { title: "UPSC CSE", image: require("../assets/c2.jpeg") },
-    { title: "BANKING", image: require("../assets/c2.jpeg") },
-    { title: "NDA", image: require("../assets/c2.jpeg") },
-    { title: "FOOD SI", image: require("../assets/c2.jpeg") },
-    { title: "LSAT", image: require("../assets/c1.jpeg") },
-    { title: "MAT", image: require("../assets/c1.jpeg") },
-    { title: "CAT", image: require("../assets/c1.jpeg") },
-  ];
+    { title: "CDS", author: "View Price ₹", image: require("../assets/1.png") },
+    { title: "NDA", author: "View Price ₹", image: require("../assets/2.png") },
+    { title: "UPSC", author: "View Price ₹", image: require("../assets/3.png") },
+    { title: "WBCS", author: "View Price ₹", image: require("../assets/4.png") },
+    { title: "CAT", author: "View Price ₹", image: require("../assets/5.png") },
+    { title: "CLAT", author: "View Price ₹", image: require("../assets/6.png") },
+    { title: "BANK", author: "View Price ₹", image: require("../assets/7.png") },
+    { title: "SSC", author: "View Price ₹", image: require("../assets/8.png") },
+    { title: "RAIL", author: "View Price ₹", image: require("../assets/9.png") },
+    { title: "COMBINED", author: "View Price ₹", image: require("../assets/10.png") },
+   ];
 
   const settings = {
     dots: true,
@@ -68,3 +71,4 @@ const CourseCarousel = ({ onOpenPopup }) => {
 
 
 export default CourseCarousel;
+
