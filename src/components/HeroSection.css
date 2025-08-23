@@ -115,6 +115,7 @@
   .hero-tags span {
     display: block;
     margin-bottom: 0.5rem;
+    text-align: left;
   }
 
   .hero-right {
@@ -136,4 +137,5 @@
     margin: 0.5rem;
   }
 }
+
 
