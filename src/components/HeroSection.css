@@ -27,6 +27,10 @@
   margin-bottom: 1.5rem;
 }
 
+.hero-subtext span {
+  color: red;
+}
+
 .search-bar {
   display: flex;
   align-items: center;
@@ -132,3 +136,4 @@
     margin: 0.5rem;
   }
 }
+
