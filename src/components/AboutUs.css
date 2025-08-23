@@ -35,13 +35,13 @@
 .about-text p b {
   color: red;
   font-family: 'Georgia';
-  font-size: 1.4rem;
-  text-align: right;
 }
 
 .about-text p b span{
   color: red;
   font-family: "Great Vibes";
+  font-size: 1.4rem;
+  text-align: right !important;
 }
 
 
@@ -102,6 +102,7 @@
     text-align: left;
   }
 }
+
 
 
 
