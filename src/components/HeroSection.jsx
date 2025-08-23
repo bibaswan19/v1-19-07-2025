@@ -9,7 +9,7 @@ const HeroSection = () => {
 {/*         <p className="hero-offer">✅ Get 30% off on first enroll</p> */}
         <h1>YOUR SUCCESS, OUR GOAL</h1>
         <p className="hero-subtext">
-          There’s no shortcut to success, but there’s always the right guidance – find it at Bibaswan.
+          There’s no shortcut to success, but there’s always the right guidance – find it at <span>Bibaswan</span>.
         </p>
         
         {/* <div className="search-bar">
@@ -38,4 +38,5 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
