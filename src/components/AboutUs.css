@@ -37,11 +37,12 @@
   font-family: 'Georgia';
 }
 
-.about-text p b span{
+.about-text p b span {
   color: red;
-  font-family: "Great Vibes";
+  font-family: "Great Vibes", cursive; /* always add fallback */
   font-size: 1.4rem;
-  text-align: right !important;
+  display: block; /* needed if you want text-align to take effect */
+  text-align: right;
 }
 
 
@@ -102,6 +103,7 @@
     text-align: left;
   }
 }
+
 
 
 
