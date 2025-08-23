@@ -35,6 +35,8 @@
 .about-text p b {
   color: red;
   font-family: 'Georgia';
+  font-size: 1.4rem;
+  text-align: right;
 }
 
 .about-text p b span{
@@ -100,6 +102,7 @@
     text-align: left;
   }
 }
+
 
 
 
