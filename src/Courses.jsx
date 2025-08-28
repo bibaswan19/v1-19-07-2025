@@ -62,6 +62,15 @@ const courses = [
       { title: "CLAT", pdf: "/pdfs/clat.pdf", description: "Focused preparation for CLAT with expert faculty, updated legal reasoning materials, mock tests, and personalized mentorship for top law school admissions." },
     ],
   },
+    {
+    title: "COMBINED COURSES",
+    image: require("./assets/COMBINED.png"),
+    subtopics: [
+      { title: "RAIL", pdf: "/pdfs/rail.pdf", description: "Comprehensive preparation for Railway exams like RRB NTPC, Group D, ALP, and Technician with updated content, mock tests, and expert support." },
+      { title: "SSC", pdf: "/pdfs/ssc.pdf", description: "CGL, CHSL and other SSC tier exams with full syllabus support." },
+      { title: "BANKING", pdf: "/pdfs/BANK.pdf", description: "Expert-led preparation for Bank P.O. exams (IBPS, SBI, etc.) with focused training on Prelims, Mains, and Interview rounds." },
+    ],
+  },
   {
     title: "MANAGEMENT ENTRANCE",
     image: require("./assets/CAT.jpg"),
